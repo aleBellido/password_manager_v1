@@ -2,14 +2,9 @@ import random
 import string
 
 def create_password():
-    characters = string.digits + string.punctuation + string.ascii_letters # Lower, upper, numbers and symbols combined
-    password= []
-    lenght = int(input("Lenght (1 - 12) --> "))
-    
-    for i in range(lenght):
-        password.append(random.choice(characters))
-
-    password = "".join(password)
+    characters = string.digits + string.punctuation + string.ascii_letters
+    length = int(input("Length (1 - 12) --> "))
+    password = "".join(random.choices(characters, k=length))
     return password
         
 print(f'Password Generated --> {create_password()}' ) # Temporal comprobation
