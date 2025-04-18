@@ -3,11 +3,16 @@ import string
 
 def create_password():
     characters = string.digits + string.punctuation + string.ascii_letters
+    platform = input('Platform (Discord, Github, X) --> ')
     length = int(input("Length (1 - 12) --> "))
     password = "".join(random.choices(characters, k=length))
-    return password
-        
-print(f'Password Generated --> {create_password()}' ) # Temporal comprobation
+    
+    # Save password in a .txt file at the moment. It will be .json
+    with open("passwords.txt", 'a') as file:
+        file.write(str({platform: password}) + '\n')
+    print('Password generated and saved!')
+
+create_password()
 
 def password_config():
     #capital_letters = input("Capital Letters? Y/n --> ").lower()
