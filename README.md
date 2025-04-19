@@ -17,7 +17,7 @@ The main goal for now is to practice and improve my skills in:
 - [x] First basic script working  
 - [ ] Decent interface  
 - [ ] Secure password encryption  
-- [ ] Persistent storage  
+- [x] Persistent storage  
 - [ ] Unit testing  
 - [ ] Polished CLI or GUI  
 
@@ -40,6 +40,6 @@ Feedback, suggestions, or constructive pull requests are always welcome!
 ## 🔧 Quick Installation (Temporary)
 
 ```bash
-git clone https://github.com/your-username/password-manager.git
+git clone https://github.com/aleBellido/password_manager_v1
 cd password-manager
 python main.py
