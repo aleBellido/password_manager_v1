@@ -40,6 +40,6 @@ Feedback, suggestions, or constructive pull requests are always welcome!
 ## 🔧 Quick Installation (Temporary)
 
 ```bash
-git clone https://github.com/aleBellido/password_manager_v1
+git clone https://github.com/aleBellido/password_manager_V1.git
 cd password-manager
 python main.py
